@@ -1,3 +1,3 @@
 # Harley
 
-I am learning GitHub and testing pull request checks.
+I am learning GitHub and testing automatic profile updates.
