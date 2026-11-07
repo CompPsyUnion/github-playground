@@ -47,7 +47,7 @@ Pull requests from `docs/*` and `fix/*` branches are validated by
   e.g. `HarleyZHOUzzz` → `profiles/HarleyZHOUzzz.md`;
 - on a `docs/*` branch the file must be **newly added**; on a `fix/*`
   branch it must be a **modification of your existing profile**;
-- the content is at least 20 characters and starts with a `# Title` line, for example, `# Robert He`.
+- the content starts with a `# Title` line, for example, `# Robert He`.
 
 Anything else fails the check with an explanation, and the robot will not
 merge it.

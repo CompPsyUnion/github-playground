@@ -4,8 +4,8 @@
 Two layers of rules:
 
 1. Repo-wide format check (always runs): every file in profiles/ is a
-   valid profile — GitHub-username filename, >= MIN_CHARS of content,
-   starting with a "# Title" line. Files starting with "_" are templates.
+   valid profile — GitHub-username filename, starting with a
+   "# Title" line. Files starting with "_" are templates.
 
 2. PR rules (when --author and --pr-files are given, i.e. on pull_request):
    a profile PR must add EXACTLY ONE new file, and it must be
@@ -24,7 +24,6 @@ import sys
 from pathlib import Path
 
 USERNAME_RE = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$")
-MIN_CHARS = 20
 ROOT = Path(__file__).resolve().parent.parent
 PROFILES = ROOT / "profiles"
 SUMMARY_PATH = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -53,11 +52,6 @@ def check_file(path):
             "hyphens only, up to 39 characters (got %r)" % (path.name, name)
         )
     text = path.read_text(encoding="utf-8").strip()
-    if len(text) < MIN_CHARS:
-        errors.append(
-            "%s: content is too short — write at least %d characters "
-            "about yourself (got %d)" % (path.name, MIN_CHARS, len(text))
-        )
     if not any(line.startswith("# ") for line in text.splitlines()):
         errors.append('%s: start the file with a "# Title" line' % path.name)
     return errors
