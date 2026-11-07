@@ -1,5 +1,8 @@
-# Sherry-Qiuu
+## Sherry-Qiuu
 
-- Shihan Qiu (20904685)
-- I am learning a lot
-- If you want someone to cooperate with, feel free to contact me (19558222390)
+I am a person living on earth.
+
+I am learning a lot
+
+if you want someone to cooperate academically, feel free to contact me
+
