@@ -1,5 +1,5 @@
 # Shr-CS
 
--18
--CS
--Single
+- 18
+- CS
+- Single

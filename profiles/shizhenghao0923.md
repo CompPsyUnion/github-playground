@@ -1,5 +1,5 @@
 # haohao
 
--19
--FT
--CPU is such a good club
+- 19
+- FT
+- CPU is such a good club

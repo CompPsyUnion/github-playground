@@ -2,4 +2,4 @@
 
 - 19
 - just a computer rookie
-- football/cycling/music/reading 
+- football/cycling/music/reading

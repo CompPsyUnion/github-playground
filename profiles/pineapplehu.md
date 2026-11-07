@@ -1,5 +1,5 @@
 # Gavin Hu
 
--19
--mam
--absolute single
+- 19
+- mam
+- absolute single
